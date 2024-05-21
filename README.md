@@ -1,4 +1,10 @@
-## 🎈 new
+## 🎈 PartyKit
+
+## How to play?
+
+Head over to https://new.prathamesh-dukare.partykit.dev/ and open it in multiple tabs to see realtime magic of partykit with minimal code.
+
+## Default docs to refer
 
 Welcome to the party, pal!
 

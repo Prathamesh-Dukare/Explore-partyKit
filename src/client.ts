@@ -9,6 +9,7 @@ let pingInterval: ReturnType<typeof setInterval>;
 // Let's append all the messages we get into this DOM element
 const output = document.getElementById("app") as HTMLDivElement;
 const sendBtn = document.getElementById("sendBtn") as HTMLButtonElement;
+const clearBtn = document.getElementById("clear") as HTMLButtonElement;
 
 // Helper function to add a new line to the DOM
 function add(text: string) {
@@ -35,6 +36,10 @@ sendBtn.addEventListener("click", () => {
   console.log(message.value);
   conn.send(message.value);
   message.value = "";
+});
+
+clearBtn.addEventListener("click", () => {
+  output.innerHTML = "";
 });
 
 // Let's listen for when the connection opens

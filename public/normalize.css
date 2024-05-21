@@ -349,3 +349,7 @@ template {
 [hidden] {
   display: none;
 }
+
+#clear {
+  margin: 2rem 1rem;
+}

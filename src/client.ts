@@ -31,10 +31,10 @@ conn.addEventListener("message", (event) => {
 
 sendBtn.addEventListener("click", () => {
   console.log("sending message");
-  let message = (document.getElementById("message") as HTMLInputElement).value;
-  console.log(message);
-  conn.send(message);
-  message = "";
+  let message = document.getElementById("message") as HTMLInputElement;
+  console.log(message.value);
+  conn.send(message.value);
+  message.value = "";
 });
 
 // Let's listen for when the connection opens
